@@ -10,7 +10,7 @@ const notes = [
         id: 2,
         subject: "Halloween",
         date: "October 31st, 2081",
-        feeling: "spooky",
+        feeling: "spooked",
         timeSpent: "5 hours"
     },
 ]
@@ -24,5 +24,14 @@ const noteAboutToday = {
 }
 
 notes.push(noteAboutToday)
+
+for (const note of notes) {
+    console.log(`Note ${note.id}
+${note.date}
+I learned about ${note.subject}.
+I spent ${note.timeSpent} learning about it.
+I felt ${note.feeling} afterwards.
+`)
+}
 
 console.log(notes)
